@@ -35,4 +35,5 @@ The results are the following:
 ## Comparison
 > Everything related to the random forest can be found in the file [comparison.ipynb]()
 TODO How do the two methods compare? Which one is better? 
+
 In case you want to know how good your wine is gonna be and you have a chemical laboratory at hand, this is a method you can use. 
