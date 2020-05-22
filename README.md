@@ -3,7 +3,8 @@ _**Johannes Cordier and Jeremia Stalder**_
 
 Our goal for this group project was twofold: First, we wanted to get to know Python and how to use it for a real world project. Second, we wanted to learn new machine learning techniques and directly apply them.
 
-## Data and data cleaning
+## Data
+> Add data handling can be found in the file _data.ipynb_
 
 
 ## Random forest
