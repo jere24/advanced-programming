@@ -27,7 +27,17 @@ After comparing the estimated predicitons with the actual wine quality. We estim
 
 The results are the following:
 
+Model Performance Red Wine
+elapsed: 22.1min finished
+Mean Squared Error: 0.2808 degrees.
+Accuracy = 94.83%.
+R-Squared = 0.56.
 
+Model Performance White Wine
+elapsed: 63.1min finished
+Mean Squared Error: 0.3348 degrees.
+Accuracy = 93.82%.
+R-Squared = 0.56.
 
 ## Neural network
 > Everything related to the random forest can be found in the file [NeuralNet.ipynb]()
