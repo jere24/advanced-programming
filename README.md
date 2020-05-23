@@ -33,16 +33,17 @@ After comparing the estimated predicitons with the actual wine quality. We estim
 The results are the following:
 
 _Model Performance Red Wine:_
-elapsed: 22.1min finished
-Mean Squared Error: 0.2808 degrees.
-Accuracy = 94.83%.
-R-Squared = 0.56.
+- elapsed: 22.1min finished
+- Mean Squared Error: 0.2808 degrees.
+- Accuracy = 94.83%.
+- R-Squared = 0.56.
 
 _Model Performance White Wine:_
-elapsed: 63.1min finished
-Mean Squared Error: 0.3348 degrees.
-Accuracy = 93.82%.
-R-Squared = 0.56.
+- elapsed: 25.3min finished
+- Mean Squared Error: 0.3348 degrees.
+- Accuracy = 93.82%.
+- R-Squared = 0.56.
+
 
 ## Neural network
 > Everything related to the random forest can be found in the file [neural_net.ipynb](./neural_net.ipynb)
@@ -75,6 +76,6 @@ As we can see, the random forest performs better than the neural network. This m
 2. It it is quite likely that random forests are better suited for regression tasks.
 3. The sample size might be too small for the neural network.
 
-However, both prediction methods work quite well in predicting the quality of wine base on physicochemical properties.
+However, both prediction methods work quite well in predicting the quality of wine based on physicochemical properties.
 
 In case you want to know how good your wine is gonna be and you have a chemical laboratory at hand, this is a method you can use to predict the quality of your wine. Cheers!
