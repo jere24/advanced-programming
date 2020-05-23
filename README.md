@@ -50,9 +50,11 @@ R-Squared = 0.56.
 Neural networks work similarly to the brain. It takes inputs (in our case 11 physicochemical properties) and then feeds it to different neurons in different layers. For this we used the tensorflow keras library for python. We trained a neural network to predict the quality as accurately as possible. For this we created a neural net with 3 layers:
 - Layer 1: 64 nodes of rectified linear activation functions (relu)
 - Layer 2: 64 nodes of rectified linear activation functions (relu)
-- Layer 3: 64 nodes of sigmoid activation functions
+- Layer 3: 10 nodes of sigmoid activation functions
 
-These 64 outputs are then condensed into one output number which represents the output. We then go on to test the output with our test data.
+These 64 outputs are then condensed into one output number which represents the output. The training data is fed into the neural network for 2000 epochs, or until a stopping condition is met (the mse isn't improved in 50 epochs). The neural network tries to minimize its error by minimizing the mean square error (mse). 
+
+We then go on to test the output with our test data. These steps are repeated for the red wine dataset and the red wine dataset separately. 
 
 _Model Performance Red Wine_
 Testing set Mean Abs Error:  0.62 
