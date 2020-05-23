@@ -31,25 +31,16 @@ We tune these parameters by trying several grids of possible modelspecifications
 After comparing the estimated predicitons with the actual wine quality. We estimate the mean squared error, accuracy and R-squared for the red and white wine speratly. 
 
 The results are the following:
-
 _Model Performance Red Wine:_
-
 elapsed: 22.1min finished
-
 Mean Squared Error: 0.2808 degrees.
-
 Accuracy = 94.83%.
-
 R-Squared = 0.56.
 
 _Model Performance White Wine:_
-
 elapsed: 63.1min finished
-
 Mean Squared Error: 0.3348 degrees.
-
 Accuracy = 93.82%.
-
 R-Squared = 0.56.
 
 
