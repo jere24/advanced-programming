@@ -32,23 +32,40 @@ After comparing the estimated predicitons with the actual wine quality. We estim
 
 The results are the following:
 
-Model Performance Red Wine
+_Model Performance Red Wine_
 elapsed: 22.1min finished
 Mean Squared Error: 0.2808 degrees.
 Accuracy = 94.83%.
 R-Squared = 0.56.
 
-Model Performance White Wine
+_Model Performance White Wine_
 elapsed: 63.1min finished
 Mean Squared Error: 0.3348 degrees.
 Accuracy = 93.82%.
 R-Squared = 0.56.
 
 ## Neural network
-> Everything related to the random forest can be found in the file [NeuralNet.ipynb]()
+> Everything related to the random forest can be found in the file [neural_net.ipynb](https://github.com/jere24/advanced-programming/blob/master/neural_net.ipynb)
+
+Neural networks work similarly to the brain. It takes inputs (in our case 11 physicochemical properties) and then feeds it to different neurons in different layers. For this we used the tensorflow keras library for python. We trained a neural network to predict the quality as accurately as possible. For this we created a neural net with 3 layers:
+- Layer 1: 64 nodes of rectified linear activation functions (relu)
+- Layer 2: 64 nodes of rectified linear activation functions (relu)
+- Layer 3: 64 nodes of sigmoid activation functions
+
+These 64 outputs are then condensed into one output number which represents the output. We then go on to test the output with our test data.
+
+_Model Performance Red Wine_
+Testing set Mean Abs Error:  0.62 
+Testing set MSE:  0.86 
+
+_Model Performance White Wine_
+Testing set Mean Abs Error:  0.54 
+Testing set MSE:  0.51 
+
+The code for this part is losely base on: https://www.tensorflow.org/tutorials/keras/regression
 
 ## Comparison
 > Everything related to the random forest can be found in the file [comparison.ipynb]()
 TODO How do the two methods compare? Which one is better? 
 
-In case you want to know how good your wine is gonna be and you have a chemical laboratory at hand, this is a method you can use to predict the quality of your wine.
+In case you want to know how good your wine is gonna be and you have a chemical laboratory at hand, this is a method you can use to predict the quality of your wine. Cheers!
