@@ -39,7 +39,7 @@ _Model Performance Red Wine:_
 - R-Squared = 0.56.
 
 _Model Performance White Wine:_
-- elapsed: 63.1min finished
+- elapsed: 25.3min finished
 - Mean Squared Error: 0.3348 degrees.
 - Accuracy = 93.82%.
 - R-Squared = 0.56.
