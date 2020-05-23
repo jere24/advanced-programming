@@ -76,6 +76,8 @@ As we can see, the random forest performs better than the neural network. This m
 2. It it is quite likely that random forests are better suited for regression tasks.
 3. The sample size might be too small for the neural network.
 
+The random forest seems to be better able to deal with outliers, as the neural net has a rather high MSE in comparison to the Mean Absolute Error.
+
 However, both prediction methods work quite well in predicting the quality of wine based on physicochemical properties.
 
 In case you want to know how good your wine is gonna be and you have a chemical laboratory at hand, this is a method you can use to predict the quality of your wine. Cheers!
