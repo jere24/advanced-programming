@@ -10,12 +10,12 @@ To learn about neural networks and random forest we used a [wine quality dataset
 - Compare both results
 
 ## Data
-> All data handling can be found in the file [data.ipynb](https://github.com/jere24/advanced-programming/blob/master/data_cleaning.ipynb)
+> All data handling can be found in the file [data.ipynb](./data.ipynb)
 
-The data consists of red and white wine. Every wine has eleven different physicochemical properties and a quality measure (based on expert reviews). We directly download the data and then check whether there are strong correlations between the covariates. Then, we check for NA values and split the data into a training and testing dataset. We save the data here.
+The data consists of red and white wine. Every wine has eleven different physicochemical properties and a quality measure (based on expert reviews). We directly download the data and then check whether there are strong correlations between the covariates. Then, we check for NA values and split the data into a training and testing dataset. We save the data [here](./data/).
 
 ## Random forest
-> Everything related to the random forest can be found in the file [RandomForest function.ipynb](https://github.com/jere24/advanced-programming/blob/master/RandomForest%20function.ipynb)
+> Everything related to the random forest can be found in the file [RandomForest function.ipynb](./RandomForest%20function.ipynb)
 
 A random forest is a procedure that consists of several uncorrelated trees on different subsets of the data and of different covariates. 
 All trees have grown under a certain type of randomization during the learning process. 
@@ -32,23 +32,49 @@ After comparing the estimated predicitons with the actual wine quality. We estim
 
 The results are the following:
 
-Model Performance Red Wine
+_Model Performance Red Wine:_
 elapsed: 22.1min finished
 Mean Squared Error: 0.2808 degrees.
 Accuracy = 94.83%.
 R-Squared = 0.56.
 
-Model Performance White Wine
+_Model Performance White Wine:_
 elapsed: 63.1min finished
 Mean Squared Error: 0.3348 degrees.
 Accuracy = 93.82%.
 R-Squared = 0.56.
 
 ## Neural network
-> Everything related to the random forest can be found in the file [NeuralNet.ipynb]()
+> Everything related to the random forest can be found in the file [neural_net.ipynb](./neural_net.ipynb)
+
+Neural networks work similarly to the brain. It takes inputs (in our case 11 physicochemical properties) and then feeds it to different neurons in different layers. For this we used the tensorflow keras library for python. We trained a neural network to predict the quality as accurately as possible. For this we created a neural net with 3 layers:
+- Layer 1: 64 nodes of rectified linear activation functions (relu)
+- Layer 2: 64 nodes of rectified linear activation functions (relu)
+- Layer 3: 10 nodes of sigmoid activation functions
+
+These 64 outputs are then condensed into one output number which represents the output. The training data is fed into the neural network for 2000 epochs, or until a stopping condition is met (the mse isn't improved in 50 epochs). The neural network tries to minimize its error by minimizing the mean square error (mse). 
+
+![Image of MSE for red wine in the first 500 epochs](./data/mse_red.png)
+As we can see in the plot, the MSE decreases significantly in the first few epochs. After this, there are only minor improvements of the mse.
+
+We then go on to test the output with our test data. These steps are repeated for the red wine dataset and the red wine dataset separately. 
+
+_Model Performance Red Wine:_
+Testing set Mean Abs Error:  0.62 
+Testing set MSE:  0.86 
+
+_Model Performance White Wine:_
+Testing set Mean Abs Error:  0.54 
+Testing set MSE:  0.51 
+
+The code for this part is losely base on: https://www.tensorflow.org/tutorials/keras/regression
 
 ## Comparison
-> Everything related to the random forest can be found in the file [comparison.ipynb]()
-TODO How do the two methods compare? Which one is better? 
+As we can see, the random forest performs better than the neural network. This might have different reasons:
+1. It might be better tuned.
+2. It it is quite likely that random forests are better suited for regression tasks.
+3. The sample size might be too small for the neural network.
 
-In case you want to know how good your wine is gonna be and you have a chemical laboratory at hand, this is a method you can use to predict the quality of your wine.
+However, both prediction methods work quite well in predicting the quality of wine base on physicochemical properties.
+
+In case you want to know how good your wine is gonna be and you have a chemical laboratory at hand, this is a method you can use to predict the quality of your wine. Cheers!
