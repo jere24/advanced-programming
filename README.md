@@ -3,11 +3,15 @@ _**Johannes Cordier and Jeremia Stalder**_
 
 Our goal for this group project was twofold: First, we wanted to get to know Python and how to use it for a real world project. Second, we wanted to learn new machine learning techniques and directly apply them.
 
-TODO quick description of what we did in our project
+To learn about neural networks and random forest we used a [wine quality dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality). We applied machine learning methods to predict the quality of the wine based on its physicochemical properties. We operated in the following steps:
+- Import and clean the data
+- Do predictions with a random forest
+- Do predictions with a neural network
+- Compare both results
 
 ## Data
 > All data handling can be found in the file [data.ipynb](https://github.com/jere24/advanced-programming/blob/master/data_cleaning.ipynb)
-
+The data consists of red and white wine. Every wine has eleven different physicochemical properties and a quality measure (based on expert reviews). 
 
 ## Random forest
 > Everything related to the random forest can be found in the file [RandomForest function.ipynb](https://github.com/jere24/advanced-programming/blob/master/RandomForest%20function.ipynb)
