@@ -12,7 +12,7 @@ To learn about neural networks and random forest we used a [wine quality dataset
 ## Data
 > All data handling can be found in the file [data.ipynb](./data.ipynb)
 
-The data consists of red and white wine. Every wine has eleven different physicochemical properties and a quality measure (based on expert reviews). We directly download the data and then check whether there are strong correlations between the covariates. Then, we check for NA values and split the data into a training and testing dataset. We save the data here.
+The data consists of red and white wine. Every wine has eleven different physicochemical properties and a quality measure (based on expert reviews). We directly download the data and then check whether there are strong correlations between the covariates. Then, we check for NA values and split the data into a training and testing dataset. We save the data [here](./data/).
 
 ## Random forest
 > Everything related to the random forest can be found in the file [RandomForest function.ipynb](./RandomForest%20function.ipynb)
